@@ -51,7 +51,7 @@ const Team = () => {
             className="w-full lg:w-1/2 flex flex-col justify-center"
           >
             <div className="mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-2">Ansel</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-2">Hansel Varian</h2>
               <p className="text-sm font-semibold tracking-widest uppercase text-gray">Chief Executive Officer</p>
             </div>
 
