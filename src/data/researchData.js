@@ -1,3 +1,9 @@
+import img1 from '../assets/1.webp';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.jpeg';
+import img4 from '../assets/4.jpeg';
+import img5 from '../assets/5.jpeg';
+
 export const featuredResearch = [
   {
     id: "res-1",
@@ -5,6 +11,7 @@ export const featuredResearch = [
     category: "MACRO",
     title: "Indonesia Economic Outlook 2026",
     summary: "An in-depth analysis of Indonesia's GDP growth, inflation trajectory, and monetary policy implications for the coming year.",
+    image: img1
   },
   {
     id: "res-2",
@@ -12,7 +19,7 @@ export const featuredResearch = [
     category: "INDUSTRY",
     title: "Consumer Sector Outlook",
     summary: "Evaluating the shifting dynamics in consumer spending, retail margins, and e-commerce penetration across Southeast Asia.",
-    image: "2.png"
+    image: img2
   },
   {
     id: "res-3",
@@ -20,6 +27,7 @@ export const featuredResearch = [
     category: "MARKETS",
     title: "Global Markets Quarterly",
     summary: "A comprehensive review of cross-asset performance, highlighting key trends in equities, fixed income, and commodities.",
+    image: img3
   }
 ];
 
@@ -31,6 +39,7 @@ export const allResearch = [
     category: "EQUITY",
     title: "Tech Sector Valuation Multiples",
     summary: "Assessing current software and semiconductor valuations against historical averages and growth projections.",
+    image: img4
   },
   {
     id: "res-5",
@@ -38,5 +47,6 @@ export const allResearch = [
     category: "STRATEGY",
     title: "Asset Allocation in a High-Yield Environment",
     summary: "Strategic portfolio adjustments for institutional investors navigating structurally higher interest rates.",
+    image: img5
   },
 ];

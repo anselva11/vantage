@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { featuredResearch } from '../data/researchData';
 import { ArrowRight } from 'lucide-react';
-import imgPlaceholder from '../assets/2.png';
 
 const FeaturedResearch = () => {
   return (
@@ -45,7 +44,7 @@ const FeaturedResearch = () => {
               <Link to={`/research/${report.id}`} className="block border border-border bg-white h-full pb-6">
                 <div className="aspect-[4/3] bg-offWhite mb-6 overflow-hidden relative border-b border-border">
                   {report.image ? (
-                    <img src={imgPlaceholder} alt={report.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <img src={report.image} alt={report.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   ) : (
                     <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-black via-transparent to-transparent group-hover:scale-105 transition-transform duration-700"></div>
                   )}
