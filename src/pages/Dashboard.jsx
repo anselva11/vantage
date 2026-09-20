@@ -26,19 +26,20 @@ const Dashboard = () => {
         </div>
         <nav className="flex-grow py-6 px-4 space-y-1 overflow-y-auto">
           {[
-            { name: 'Dashboard', icon: <PieChart size={18} /> },
+            { name: 'Dashboard', icon: <PieChart size={18} />, path: '/dashboard' },
             { name: 'Market Overview', icon: <Activity size={18} /> },
-            { name: 'Research', icon: <BookOpen size={18} /> },
+            { name: 'Research', icon: <BookOpen size={18} />, path: '/research' },
             { name: 'Watchlist', icon: <Activity size={18} /> },
             { name: 'Portfolio', icon: <PieChart size={18} /> },
             { name: 'Economic Data', icon: <Activity size={18} /> },
             { name: 'Reports', icon: <FileText size={18} /> },
+            { name: 'Our Team', icon: <User size={18} />, path: '/team' },
             { name: 'Settings', icon: <Settings size={18} /> },
           ].map((item, i) => (
-            <a key={i} href="#" className={`flex items-center gap-3 px-4 py-3 rounded text-sm font-medium transition-colors ${i === 0 ? 'bg-white/10 text-white' : 'text-gray hover:bg-white/5 hover:text-white'}`}>
+            <Link key={i} to={item.path || '#'} className={`flex items-center gap-3 px-4 py-3 rounded text-sm font-medium transition-colors ${i === 0 ? 'bg-white/10 text-white' : 'text-gray hover:bg-white/5 hover:text-white'}`}>
               {item.icon}
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="p-4 border-t border-white/10">
