@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: 'Consulting', path: '/consulting' },
     { name: 'Insights', path: '/insights' },
     { name: 'About', path: '/about' },
+    { name: 'Our Team', path: '/team' },
   ];
 
   const navbarBg = isScrolled || !isHome ? 'bg-white/90 backdrop-blur-md border-b border-border shadow-sm text-nearBlack' : 'bg-transparent text-white';
