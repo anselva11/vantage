@@ -3,6 +3,7 @@ import img2 from '../assets/2.png';
 import img3 from '../assets/3.jpeg';
 import img4 from '../assets/4.jpeg';
 import img5 from '../assets/5.jpeg';
+import img6 from '../assets/6.jpeg';
 
 export const featuredResearch = [
   {
@@ -48,5 +49,13 @@ export const allResearch = [
     title: "Asset Allocation in a High-Yield Environment",
     summary: "Strategic portfolio adjustments for institutional investors navigating structurally higher interest rates.",
     image: img5
+  },
+  {
+    id: "res-6",
+    date: "April 2026",
+    category: "MACRO",
+    title: "Geopolitical Shifts and Supply Chains",
+    summary: "An analysis of how changing geopolitical dynamics are forcing companies to rethink their global supply chains.",
+    image: img6
   },
 ];

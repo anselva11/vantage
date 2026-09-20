@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { allResearch } from '../data/researchData';
 import { Search } from 'lucide-react';
-import imgPlaceholder from '../assets/2.png';
 
 const Insights = () => {
   return (
@@ -54,7 +53,7 @@ const Insights = () => {
             >
               <div className="w-full sm:w-1/3 aspect-[4/3] bg-white border border-border relative overflow-hidden flex-shrink-0">
                  {post.image ? (
-                   <img src={imgPlaceholder} alt={post.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                   <img src={post.image} alt={post.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                  ) : (
                    <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-black via-transparent to-transparent group-hover:scale-105 transition-transform duration-700"></div>
                  )}
